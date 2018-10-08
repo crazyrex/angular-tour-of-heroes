@@ -1,0 +1,12 @@
+<ActionBar [title]="title" class="action-bar">
+  <NavigationButton
+    ios:visibility="collapsed" 
+    android.systemIcon="ic_menu_moreoverflow_normal_holo_dark"
+    (tap)="showDrawer()">
+  </NavigationButton>
+  <ActionItem
+    android:visibility="collapsed"
+    (tap)="showDrawer()">
+    <Label [text]="icon"></Label>
+  </ActionItem>
+</ActionBar>

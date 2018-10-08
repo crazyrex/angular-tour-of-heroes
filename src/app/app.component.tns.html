@@ -1,0 +1,11 @@
+<RadSideDrawer #drawer>
+  <GridLayout tkDrawerContent rows="*" class="sidedrawer sidedrawer-left">
+    <StackLayout class="sidedrawer-content">
+      <Button text="heroes" nsRouterLink="/heroes" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="btn btn-primary"></Button>
+      <Button text="dashboard" nsRouterLink="/dashboard" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="btn btn-primary"></Button>
+      <Button text="messages" nsRouterLink="/messages" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="btn btn-primary"></Button>
+    </StackLayout>
+  </GridLayout>
+
+  <page-router-outlet tkMainContent class="page page-content"></page-router-outlet>
+</RadSideDrawer>
