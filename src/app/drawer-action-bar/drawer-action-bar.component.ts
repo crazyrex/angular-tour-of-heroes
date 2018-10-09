@@ -2,7 +2,6 @@ import { Component, Input } from '@angular/core';
 
 import * as app from 'tns-core-modules/application';
 import { RadSideDrawer } from 'nativescript-ui-sidedrawer';
-import { isIOS } from 'tns-core-modules/platform';
 
 @Component({
   selector: 'drawer-action-bar',
@@ -20,13 +19,5 @@ export class DrawerActionBarComponent {
   closeDrawer() {
     const sideDrawer = <RadSideDrawer>app.getRootView();
     sideDrawer.closeDrawer();
-  }
-
-  get icon(): string {
-    if (isIOS) {
-      return String.fromCharCode(0x2630);
-    }
-
-    return '';
   }
 }

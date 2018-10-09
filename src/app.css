@@ -1,5 +1,25 @@
 @import '~nativescript-theme-core/css/core.light.css';
 
+.fa {
+    font-family: "FontAwesome";
+}
+
+.drawer-item {
+    font-size: 20;
+}
+
+.menu-icon {
+    margin-top: 10;
+    width: 90;
+    height: 90;
+    border-width: 1;
+    border-radius: 90;
+    font-size: 36;
+    color: #3C59FD;
+    background-color: #ffffff;
+    border-color: #d8d8d8;
+}
+
 Page {
     background: linear-gradient(to bottom, #3D78FD, #2A48CD);
 }
