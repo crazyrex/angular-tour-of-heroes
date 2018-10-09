@@ -1,5 +1,9 @@
 @import '~nativescript-theme-core/css/core.light.css';
 
+Page {
+    background: linear-gradient(to bottom, #3D78FD, #2A48CD);
+}
+
 .sidedrawer {
     background-color: #757575;
     color: white;

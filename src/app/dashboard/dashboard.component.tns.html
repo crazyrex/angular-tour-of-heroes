@@ -1,12 +1,15 @@
-<drawer-action-bar title="Top Heroes"></drawer-action-bar>
+<drawer-action-bar title=""></drawer-action-bar>
 
-<GridLayout rows="*, *">
-  <ListView row="0" [items]="heroes" class="list-group">
+<GridLayout rows="auto, auto, *">
+  <Label row="0" text="Top Heroes" class="header"></Label>
+
+  <StackLayout row="1">
+    <app-hero-search row="1"></app-hero-search>
+  </StackLayout>
+
+  <ListView row="2" [items]="heroes" class="list-group">
     <ng-template let-hero="item">
       <Button [text]="hero.name" nsRouterLink="/detail/{{hero.id}}" class="btn btn-primary"></Button>
     </ng-template>
   </ListView>
-  <StackLayout row="1">
-    <app-hero-search row="1"></app-hero-search>
-  </StackLayout>
 </GridLayout>
