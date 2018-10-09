@@ -1,4 +1,4 @@
-<ActionBar [title]="title" class="action-bar">
+<!--<ActionBar flat="true">
   <NavigationButton
     ios:visibility="collapsed" 
     android.systemIcon="ic_menu_moreoverflow_normal_holo_light"
@@ -9,4 +9,11 @@
     (tap)="showDrawer()">
     <Label text="&#x2630;"></Label>
   </ActionItem>
+</ActionBar>-->
+
+<ActionBar class="action-bar" flat="true">
+  <GridLayout columns="50, *, 50" width="100%">
+    <Label col="0" text="&#xf0c9;" (tap)="showDrawer()" class="fa"></Label>
+    <Label col="1" [text]="title" class="action-bar-title"></Label>
+  </GridLayout>
 </ActionBar>

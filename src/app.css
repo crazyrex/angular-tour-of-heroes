@@ -3,25 +3,22 @@
 .fa {
     font-family: "FontAwesome";
 }
-
-.drawer-item {
-    font-size: 20;
-}
-
-.menu-icon {
-    margin-top: 10;
-    width: 90;
-    height: 90;
-    border-width: 1;
-    border-radius: 90;
-    font-size: 36;
-    color: #3C59FD;
-    background-color: #ffffff;
-    border-color: #d8d8d8;
-}
-
 Page {
-    background: linear-gradient(to bottom, #3D78FD, #2A48CD);
+    background-color: #2A48CD;
+    /* For iPhone X and iPhone XS. Remove it causing problems. */
+    margin-bottom: -44;
+}
+
+.action-bar {
+    background-color: #2A48CD;
+    color: white;
+}
+.action-bar-title {
+    text-align: center;
+}
+.action-bar .fa {
+    margin-left: 10;
+    font-size: 20;
 }
 
 .sidedrawer {
