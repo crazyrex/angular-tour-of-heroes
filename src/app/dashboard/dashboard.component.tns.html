@@ -9,11 +9,11 @@
 
   <ListView row="2" [items]="heroes" class="list-group">
     <ng-template let-hero="item">
-      <StackLayout>
+      <StackLayout nsRouterLink="/detail/{{hero.id}}">
         <StackLayout class="circle">
           <Label [text]="hero.id"></Label>
         </StackLayout>
-        <Label class="name" [text]="hero.name" nsRouterLink="/detail/{{hero.id}}"></Label>
+        <Label class="name" [text]="hero.name"></Label>
       </StackLayout>
     </ng-template>
   </ListView>
