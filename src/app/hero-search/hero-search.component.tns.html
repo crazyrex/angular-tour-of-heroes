@@ -1,10 +1,7 @@
 <StackLayout>
-  <Label text="Hero Search" class="h1 text-center"></Label>
-
   <TextField #heroName
-    hint="enter hero-name"
+    hint="enter hero name"
     autocorrect="false"
-    class="m-x-5"
     (loaded)="heroName.text = ''"
     (textChange)="search($event.value)">
   </TextField>
