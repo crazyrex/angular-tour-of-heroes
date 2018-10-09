@@ -5,8 +5,6 @@
 }
 Page {
     background-color: #2A48CD;
-    /* For iPhone X and iPhone XS. Remove it causing problems. */
-    margin-bottom: -44;
 }
 
 .action-bar {

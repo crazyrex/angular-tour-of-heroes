@@ -11,6 +11,7 @@ FlexboxLayout {
     justify-content: center;
     align-items: center;
     align-content: flex-start;
+    margin-top: 30;
 }
 .hero-container {
     width: 49%;
