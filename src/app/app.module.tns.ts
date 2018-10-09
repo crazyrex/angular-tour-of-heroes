@@ -18,6 +18,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
+import { MessagesComponent } from './messages/messages.component';
 import { DrawerActionBarComponent } from './drawer-action-bar/drawer-action-bar.component';
 
 @NgModule({
@@ -27,6 +28,7 @@ import { DrawerActionBarComponent } from './drawer-action-bar/drawer-action-bar.
     HeroDetailComponent,
     DashboardComponent,
     HeroSearchComponent,
+    MessagesComponent,
     DrawerActionBarComponent,
   ],
   imports: [

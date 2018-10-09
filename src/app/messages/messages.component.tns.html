@@ -1,0 +1,13 @@
+<drawer-action-bar title=""></drawer-action-bar>
+
+<!-- <GridLayout rows="auto, *, auto" class="m-5"> -->
+<StackLayout>
+  <Label row="0" text="Messages" class="header"></Label>
+  <ListView row="1" [items]="messageService.messages" class="list-group">
+    <ng-template let-message="item">
+      <Label [text]="message" class="message"></Label>
+    </ng-template>
+  </ListView>
+  <Button row="2" text="Clear" (tap)="messageService.clear()" class="clear"></Button>
+</StackLayout>
+<!-- </GridLayout> -->
