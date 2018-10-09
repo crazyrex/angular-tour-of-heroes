@@ -7,14 +7,12 @@
     <app-hero-search row="1"></app-hero-search>
   </StackLayout>
 
-  <ListView row="2" [items]="heroes" class="list-group">
-    <ng-template let-hero="item">
-      <StackLayout nsRouterLink="/detail/{{hero.id}}">
-        <StackLayout class="circle">
-          <Label [text]="hero.id"></Label>
-        </StackLayout>
-        <Label class="name" [text]="hero.name"></Label>
+  <FlexboxLayout row="2">
+    <StackLayout *ngFor="let hero of heroes" class="hero-container" nsRouterLink="/detail/{{hero.id}}">
+      <StackLayout class="circle">
+        <Label [text]="hero.id"></Label>
       </StackLayout>
-    </ng-template>
-  </ListView>
+      <Label class="name" [text]="hero.name"></Label>
+    </StackLayout>
+  </FlexboxLayout>
 </GridLayout>
