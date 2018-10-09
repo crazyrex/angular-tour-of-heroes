@@ -13,7 +13,7 @@
         <StackLayout class="circle">
           <Label [text]="hero.id"></Label>
         </StackLayout>
-        <Label [text]="hero.name" nsRouterLink="/detail/{{hero.id}}"></Label>
+        <Label class="name" [text]="hero.name" nsRouterLink="/detail/{{hero.id}}"></Label>
       </StackLayout>
     </ng-template>
   </ListView>

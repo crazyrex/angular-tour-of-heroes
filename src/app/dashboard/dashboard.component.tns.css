@@ -9,3 +9,22 @@
 .list-group {
     background-color: transparent;
 }
+
+.circle {
+    background-color: #5a78e3;
+    color: white;
+    border-radius: 50;
+    width: auto;
+    font-size: 20;
+    width: 50;
+    height: 50;
+    margin-top: 20;
+    text-align: center;
+    vertical-align: middle;
+}
+.name {
+    color: white;
+    font-size: 20;
+    text-align: center;
+    margin: 10 0 20 0;
+}
