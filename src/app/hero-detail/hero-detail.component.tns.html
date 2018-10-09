@@ -1,10 +1,12 @@
 <ActionBar title="{{hero?.name | uppercase}} Details" class="action-bar">
 </ActionBar>
 
-<StackLayout *ngIf="hero" class="m-5">
-  <Label text="ID: {{hero.id}}" class="h1 text-center"></Label>
-  <TextField [(ngModel)]="hero.name" hint="name" class="input input-border"></TextField>
-  
-  <Button text="Go Back" (tap)="goBack()" class="btn btn-primary"></Button>
-  <Button text="Save" (tap)="save()" class="btn btn-primary"></Button>
-</StackLayout>
+<GridLayout *ngIf="hero" class="container">
+  <StackLayout  class="container">
+    <Label text="ID: {{hero.id}}" class="h1 text-center"></Label>
+    <TextField [(ngModel)]="hero.name" hint="name" class="input input-border"></TextField>
+    
+    <Button text="Go Back" (tap)="goBack()" class="btn btn-primary"></Button>
+    <Button text="Save" (tap)="save()" class="btn btn-primary"></Button>
+  </StackLayout>
+</GridLayout>

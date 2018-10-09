@@ -1,9 +1,18 @@
 <RadSideDrawer #drawer>
   <GridLayout tkDrawerContent rows="*" class="sidedrawer sidedrawer-left">
     <StackLayout class="sidedrawer-content">
-      <Label text="&#xf02d; Dashboard" nsRouterLink="/dashboard" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="fa drawer-item"></Label>
-      <Label text="&#xf0c0; Heroes" nsRouterLink="/heroes" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="fa drawer-item"></Label>
-      <Label text="&#xf27a; Messages" nsRouterLink="/messages" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" class="fa drawer-item"></Label>
+      <StackLayout nsRouterLink="/dashboard" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
+        <Label text="&#xf02d;" class="fa"></Label>
+        <Label class="link-label" text="Dashboard"></Label>
+      </StackLayout>
+      <StackLayout nsRouterLink="/heroes" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
+        <Label text="&#xf0c0;" class="fa"></Label>
+        <Label class="link-label" text="Heroes"></Label>
+      </StackLayout>
+      <StackLayout nsRouterLink="/messages" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
+        <Label text="&#xf27a;" class="fa"></Label>
+        <Label class="link-label" text="Messages"></Label>
+      </StackLayout>
     </StackLayout>
   </GridLayout>
 

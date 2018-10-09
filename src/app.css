@@ -30,8 +30,16 @@ Page {
     font-size: 22;
     padding-top: 20;
 }
-.sidedrawer Label {
+.sidedrawer-content StackLayout {
     margin: 30;
+    
+}
+.sidedrawer .fa {
+    font-size: 35;
+}
+
+.link-label {
+    margin-left: 15;
 }
 
 .circle {
