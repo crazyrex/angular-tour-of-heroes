@@ -1,3 +1,36 @@
 .container {
     background-color: #EFEFF4;
 }
+
+.grid {
+    margin: 30;
+}
+
+.circle {
+    background-color: #C6D7FE;
+    color: #2A48CD;
+}
+.name {
+    font-size: 22;
+    font-weight: bold;
+    margin-left: 10;
+}
+.id-label {
+    text-align: center;
+}
+.name-label {
+    margin-left: 10;
+}
+.id-label, .name-label {
+    margin-top: 10;
+    color: #ABABAB;
+}
+
+.btn {
+    background-color: #2A48CD;
+    color: white;
+    font-weight: bold;
+    font-size: 18;
+    padding: 15 0;
+    border-radius: 25;
+}
