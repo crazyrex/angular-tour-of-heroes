@@ -9,7 +9,12 @@
 
   <ListView row="2" [items]="heroes" class="list-group">
     <ng-template let-hero="item">
-      <Button [text]="hero.name" nsRouterLink="/detail/{{hero.id}}" class="btn btn-primary"></Button>
+      <StackLayout>
+        <StackLayout class="circle">
+          <Label [text]="hero.id"></Label>
+        </StackLayout>
+        <Label [text]="hero.name" nsRouterLink="/detail/{{hero.id}}"></Label>
+      </StackLayout>
     </ng-template>
   </ListView>
 </GridLayout>
