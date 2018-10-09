@@ -7,12 +7,14 @@
 }
 .search-container TextField {
     color: #757575;
+    padding-left: 10;
+    font-size: 20;
 }
 .search-container Button {
     background-color: #30CE91;
     color: white;
-    font-size: 16;
-    padding: 10 20;
+    font-size: 18;
+    padding: 10 30;
     border-radius: 20;
 }
 
@@ -39,4 +41,5 @@ ListView {
 }
 .delete-button {
     font-size: 24;
+    font-weight: normal;
 }
