@@ -1,8 +1,8 @@
 <ActionBar title="{{hero?.name | uppercase}} Details" class="action-bar">
 </ActionBar>
 
-<GridLayout *ngIf="hero" class="container">
-  <StackLayout  class="container">
+<GridLayout class="container">
+  <StackLayout *ngIf="hero">
     <Label text="ID: {{hero.id}}" class="h1 text-center"></Label>
     <TextField [(ngModel)]="hero.name" hint="name" class="input input-border"></TextField>
     
