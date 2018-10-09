@@ -1,18 +1,17 @@
 <drawer-action-bar title="My Heroes"></drawer-action-bar>
 
-<StackLayout>
-  <GridLayout rows="auto" columns="auto, *, auto">
-    <Label text="Hero name:" verticalAlignment="center" class="h2 m-l-5"></Label>
-    <TextField col="1" hint="name..." #heroName class="m-x-5"></TextField>
-    <Button col="2" text="add" (tap)="add(heroName.text); heroName.text=''" class="btn btn-primary"></Button>
+<StackLayout class="container">
+  <GridLayout rows="auto" columns="*, auto" class="search-container">
+    <TextField col="0" hint="Hero name" #heroName></TextField>
+    <Button col="1" text="Add" (tap)="add(heroName.text); heroName.text=''"></Button>
   </GridLayout>
 
   <ListView [items]="heroes" class="list-group" height="100%">
     <ng-template let-hero="item">
-      <GridLayout columns="auto, *, auto" nsRouterLink="/detail/{{hero.id}}">
-        <Label col="0" [text]="hero.id" class="list-group-item"></Label>
-        <Label col="1" [text]="hero.name" class="list-group-item"></Label>
-        <Button col="2" text="X" (tap)="delete(hero)" class="btn btn-primary"></Button>
+      <GridLayout class="hero-container" columns="auto, *, auto" nsRouterLink="/detail/{{hero.id}}">
+        <Label col="0" class="circle" [text]="hero.id"></Label>
+        <Label col="1" class="hero-label" [text]="hero.name"></Label>
+        <Label col="2" class="delete-button" text="D" (tap)="delete(hero)"></Label>
       </GridLayout>
     </ng-template>
   </ListView>

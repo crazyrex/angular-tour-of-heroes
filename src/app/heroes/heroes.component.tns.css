@@ -1,0 +1,42 @@
+.container {
+    background-color: #EFEFF4;
+}
+
+.search-container {
+    padding: 15;
+}
+.search-container TextField {
+    color: #757575;
+}
+.search-container Button {
+    background-color: #30CE91;
+    color: white;
+    font-size: 16;
+    padding: 10 20;
+    border-radius: 20;
+}
+
+ListView {
+    background-color: transparent;
+    separator-color: transparent;
+}
+
+.hero-container {
+    background-color: white;
+    border-radius: 10;
+    margin: 10 15;
+    padding: 15;
+
+}
+.circle {
+    background-color: #C6D7FE;
+    color: #2A48CD;
+}
+.hero-label {
+    font-weight: bold;
+    font-size: 18;
+    margin-left: 10;
+}
+.delete-button {
+    
+}
