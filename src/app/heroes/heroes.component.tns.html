@@ -11,7 +11,7 @@
       <GridLayout class="hero-container" columns="auto, *, auto" nsRouterLink="/detail/{{hero.id}}">
         <Label col="0" class="circle" [text]="hero.id"></Label>
         <Label col="1" class="hero-label" [text]="hero.name"></Label>
-        <Label col="2" class="delete-button" text="D" (tap)="delete(hero)"></Label>
+        <Label col="2" class="delete-button fa" text="&#xf1f8;" (tap)="delete(hero)"></Label>
       </GridLayout>
     </ng-template>
   </ListView>
