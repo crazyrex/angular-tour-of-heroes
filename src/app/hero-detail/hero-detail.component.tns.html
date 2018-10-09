@@ -1,9 +1,10 @@
-<ActionBar title="{{hero?.name }}" class="action-bar">
-</ActionBar>
+<ActionBar class="action-bar" flat="true"></ActionBar>
 
 <GridLayout class="container">
-  <StackLayout>
-    <GridLayout class="grid" rows="auto auto" columns="auto, *" *ngIf="hero">
+  <StackLayout *ngIf="hero">
+    <Label class="main-name" [text]="hero.name"></Label>
+
+    <GridLayout class="grid" rows="auto auto" columns="auto, *">
       <Label row="0" col="0" class="circle" [text]="hero.id"></Label>
       <TextField class="name" row="0" col="1" [(ngModel)]="hero.name" hint="name"></TextField>
       
