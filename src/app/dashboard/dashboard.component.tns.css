@@ -6,8 +6,16 @@
     margin: 0 0 20 0;
 }
 
-.list-group {
-    background-color: transparent;
+FlexboxLayout {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+.hero-container {
+    width: 49%;
+    border-width: 1;
+    border-color: #395ad9;
 }
 
 .name {
