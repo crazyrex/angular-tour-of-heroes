@@ -1,5 +1,14 @@
 .container {
-    background-color: #EFEFF4;
+    background-color: #EDECF2;
+}
+
+.main-name {
+    background-color: #2A48CD;
+    font-size: 36;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    padding: 0 0 15 0;
 }
 
 .grid {
@@ -13,13 +22,13 @@
 .name {
     font-size: 22;
     font-weight: bold;
-    margin-left: 10;
+    margin-left: 20;
 }
 .id-label {
     text-align: center;
 }
 .name-label {
-    margin-left: 10;
+    margin-left: 20;
 }
 .id-label, .name-label {
     margin-top: 10;
