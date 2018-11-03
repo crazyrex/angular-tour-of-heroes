@@ -26,20 +26,23 @@ ListView {
 .hero-container {
     background-color: white;
     border-radius: 10;
-    margin: 10 15;
+    margin: 8 15;
     padding: 15;
-
 }
 .circle {
     background-color: #C6D7FE;
     color: #2A48CD;
+    padding-top: 8;
+    font-weight: bold;
 }
 .hero-label {
     font-weight: bold;
-    font-size: 18;
+    font-size: 20;
     margin-left: 10;
+    padding-top: 8;
 }
 .delete-button {
-    font-size: 24;
+    font-size: 28;
     font-weight: normal;
+    padding-top: 8;
 }
