@@ -44,11 +44,6 @@ module.exports = env => {
         sourceMap, // --env.sourceMap
         hmr, // --env.hmr,
     } = env;
-
-    env.externals= env.externals || []
-    env.externals.push("nativescript-angular");
-    env.externals.push("@angular");
-
     const externals = (env.externals || []).map((e) => { // --env.externals
         return new RegExp(e + ".*");
     });
