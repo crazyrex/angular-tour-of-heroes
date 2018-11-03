@@ -1,13 +1,13 @@
 <RadSideDrawer #drawer>
   <GridLayout tkDrawerContent rows="*" class="sidedrawer sidedrawer-left">
     <StackLayout class="sidedrawer-content">
-      <StackLayout nsRouterLink="/dashboard" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
-        <Label text="&#xf02d;" class="fa"></Label>
-        <Label class="link-label" text="Dashboard"></Label>
-      </StackLayout>
       <StackLayout nsRouterLink="/heroes" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
         <Label text="&#xf0c0;" class="fa"></Label>
         <Label class="link-label" text="Heroes"></Label>
+      </StackLayout>
+      <StackLayout nsRouterLink="/dashboard" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
+        <Label text="&#xf02d;" class="fa"></Label>
+        <Label class="link-label" text="Dashboard"></Label>
       </StackLayout>
       <StackLayout nsRouterLink="/messages" (tap)="drawer.sideDrawer.closeDrawer()" clearHistory="true" orientation="horizontal">
         <Label text="&#xf27a;" class="fa"></Label>
