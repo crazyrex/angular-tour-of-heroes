@@ -1,48 +1,32 @@
-.container {
-    background-color: #EFEFF4;
-}
-
 .search-container {
-    padding: 15;
+  padding: 15;
 }
 .search-container TextField {
-    color: #757575;
-    padding-left: 10;
-    font-size: 20;
-}
-.search-container Button {
-    background-color: #30CE91;
-    color: white;
-    font-size: 18;
-    padding: 10 30;
-    border-radius: 20;
+  color: #757575;
+  padding-left: 10;
+  font-size: 20;
 }
 
 ListView {
-    background-color: transparent;
-    separator-color: transparent;
+  background-color: transparent;
+  separator-color: transparent;
 }
 
 .hero-container {
-    background-color: white;
-    border-radius: 10;
-    margin: 8 15;
-    padding: 15;
+  background-color: white;
+  border-radius: 10;
+  margin: 8 15;
+  padding: 15;
 }
-.circle {
-    background-color: #C6D7FE;
-    color: #2A48CD;
-    padding-top: 8;
-    font-weight: bold;
-}
+
 .hero-label {
-    font-weight: bold;
-    font-size: 20;
-    margin-left: 10;
-    padding-top: 8;
+  font-weight: bold;
+  font-size: 20;
+  margin-left: 10;
+  padding-top: 8;
 }
 .delete-button {
-    font-size: 28;
-    font-weight: normal;
-    padding-top: 8;
+  font-size: 28;
+  font-weight: normal;
+  padding-top: 8;
 }

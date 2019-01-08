@@ -1,9 +1,9 @@
 <drawer-action-bar title="My Heroes"></drawer-action-bar>
 
-<StackLayout class="container">
+<StackLayout class="container-light">
   <GridLayout rows="auto" columns="*, auto" class="search-container">
     <TextField col="0" hint="Hero name" #heroName></TextField>
-    <Button col="1" text="Add" (tap)="add(heroName.text); heroName.text=''"></Button>
+    <Button col="1" text="Add" (tap)="add(heroName.text); heroName.text=''" class="btn-green"></Button>
   </GridLayout>
 
   <ListView [items]="heroes" height="100%">

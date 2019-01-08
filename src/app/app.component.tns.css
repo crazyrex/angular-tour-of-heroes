@@ -1,0 +1,16 @@
+.link-label {
+  margin-left: 15;
+}
+
+.sidedrawer {
+  background-color: #555;
+  color: white;
+  font-size: 22;
+  padding-top: 20;
+}
+.sidedrawer-content StackLayout {
+  margin: 30;
+}
+.sidedrawer .fa {
+  font-size: 35;
+}

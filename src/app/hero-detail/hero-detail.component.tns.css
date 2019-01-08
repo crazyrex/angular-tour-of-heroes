@@ -1,45 +1,20 @@
-.container {
-    background-color: #EDECF2;
-}
-
-.main-name {
-    background-color: #2A48CD;
-    font-size: 36;
-    font-weight: bold;
-    text-align: center;
-    color: white;
-    padding: 0 0 15 0;
-}
-
 .grid {
-    margin: 30;
+  margin: 30;
 }
 
-.circle {
-    background-color: #C6D7FE;
-    color: #2A48CD;
-}
 .name {
-    font-size: 22;
-    font-weight: bold;
-    margin-left: 20;
+  font-size: 22;
+  font-weight: bold;
+  margin-left: 20;
+}
+
+.id-label, .name-label {
+  margin-top: 10;
+  color: #ABABAB;
 }
 .id-label {
-    text-align: center;
+  text-align: center;
 }
 .name-label {
-    margin-left: 20;
-}
-.id-label, .name-label {
-    margin-top: 10;
-    color: #ABABAB;
-}
-
-.btn {
-    background-color: #2A48CD;
-    color: white;
-    font-weight: bold;
-    font-size: 18;
-    padding: 15 0;
-    border-radius: 25;
+  margin-left: 20;
 }

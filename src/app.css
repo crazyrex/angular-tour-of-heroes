@@ -1,50 +1,57 @@
 @import '~nativescript-theme-core/css/core.light.css';
 
-.fa {
-    font-family: "FontAwesome";
-}
-Page {
-    background-color: #2A48CD;
-}
-
 .action-bar {
-    background-color: #2A48CD;
-    color: white;
-}
-.action-bar-title {
-    text-align: center;
-}
-.action-bar .fa {
-    margin-left: 10;
-    font-size: 20;
+  background-color: #2A48CD;
+  color: white;
 }
 
-.sidedrawer {
-    background-color: #757575;
-    color: white;
-    font-size: 22;
-    padding-top: 20;
-}
-.sidedrawer-content StackLayout {
-    margin: 30;
-    
-}
-.sidedrawer .fa {
-    font-size: 35;
+.fa {
+  font-family: "FontAwesome";
 }
 
-.link-label {
-    margin-left: 15;
+Page {
+  background-color: #2A48CD;
+}
+
+.container-light {
+  background-color: #EFEFF4;
+}
+
+.header {
+  background-color: #2A48CD;
+  font-size: 36;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  padding: 0 0 15 0;
+}
+
+.big-btn, .btn-red, .btn-green, .btn-blue {
+  color: white;
+  font-weight: bold;
+  font-size: 18;
+  padding: 10 30;
+  border-radius: 25;
+  margin: 20 10 0 10
+}
+.btn-red {
+  background-color: #ED4472;
+}
+.btn-green {
+  background-color: #30CE91;
+}
+.btn-blue {
+  background-color: #2A48CD;
 }
 
 .circle {
-    background-color: #5a78e3;
-    color: white;
-    border-radius: 50;
-    width: auto;
-    font-size: 20;
-    width: 50;
-    height: 50;
-    text-align: center;
-    vertical-align: middle;
+  background-color: #5a78e3;
+  color: white;
+  border-radius: 50;
+  width: auto;
+  font-size: 20;
+  width: 50;
+  height: 50;
+  text-align: center;
+  vertical-align: middle;
 }

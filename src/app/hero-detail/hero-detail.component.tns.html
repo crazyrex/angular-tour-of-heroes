@@ -1,17 +1,17 @@
 <ActionBar class="action-bar" flat="true"></ActionBar>
 
-<GridLayout class="container">
+<GridLayout class="container-light">
   <StackLayout *ngIf="hero">
-    <Label class="main-name" [text]="hero.name"></Label>
+    <Label class="header" [text]="hero.name"></Label>
 
-    <GridLayout class="grid" rows="auto auto" columns="auto, *">
+    <GridLayout class="grid" rows="auto auto" columns="auto *">
       <Label row="0" col="0" class="circle" [text]="hero.id"></Label>
       <TextField class="name" row="0" col="1" [(ngModel)]="hero.name" hint="name"></TextField>
-      
+
       <Label class="id-label" row="1" col="0" text="ID"></Label>
       <Label class="name-label" row="1" col="1" text="Name"></Label>
     </GridLayout>
 
-    <Button text="Save" (tap)="save()" class="btn"></Button>
+    <Button text="Save" (tap)="save()" class="btn-blue"></Button>
   </StackLayout>
 </GridLayout>

@@ -1,31 +1,19 @@
-.header {
-    font-size: 42;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    margin: 0 0 20 0;
-}
-
 FlexboxLayout {
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: flex-start;
-    margin-top: 30;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: 30;
 }
 .hero-container {
-    width: 49%;
-    border-width: 1;
-    border-color: #395ad9;
+  width: 49%;
+  border-width: 1;
+  border-color: #395ad9;
 }
 
 .name {
-    color: white;
-    font-size: 20;
-    text-align: center;
-    margin: 10 0 20 0;
-}
-
-.circle {
-    margin-top: 20;
+  color: white;
+  font-size: 20;
+  text-align: center;
+  margin: 10 0 20 0;
 }

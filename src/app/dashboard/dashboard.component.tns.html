@@ -9,8 +9,8 @@
 
   <FlexboxLayout row="2">
     <StackLayout *ngFor="let hero of heroes" class="hero-container" nsRouterLink="/detail/{{hero.id}}">
-      <StackLayout class="circle">
-        <Label [text]="hero.id"></Label>
+      <StackLayout class="m-t-20">
+        <Label [text]="hero.id" class="circle"></Label>
       </StackLayout>
       <Label class="name" [text]="hero.name"></Label>
     </StackLayout>

@@ -7,5 +7,5 @@
       <Label *ngFor='let message of messageService.messages' [text]="message" class="message"></Label>
     </StackLayout>
   </ScrollView>
-  <Button row="2" text="Clear" (tap)="messageService.clear()" class="clear"></Button>
+  <Button row="2" text="Clear" (tap)="messageService.clear()" class="btn-red"></Button>
 </GridLayout>
